@@ -8,9 +8,14 @@ const todos = [
 
 function getCompletedTodo(todos) {
   // Start coding here
+  return todos.filter(checkwords);
 }
 
-getCompletedTodo(todos);
+const checkwords = (check) => check.completed === true;
+
+let result = getCompletedTodo(todos);
+
+console.log(result);
 
 /* 
 	Output:
