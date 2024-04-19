@@ -8,10 +8,13 @@ const todos = [
 
 function getTodoTopics(todos) {
   // Start coding here
+	return todos.map(checkwords);
 }
+const checkwords = (check) => check.topic;
 
-getTodoTopics(todos);
+let result = getTodoTopics(todos);
 
+console.log(result);
 /* 
 	Output:
 	[
